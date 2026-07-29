@@ -1,0 +1,90 @@
+{
+  "dataset": {
+    "registros": 200,
+    "aprobados": 107,
+    "reprobados": 93,
+    "promedio_calificacion_final": 70.7875,
+    "valores_faltantes": 0,
+    "duplicados": 0
+  },
+  "clasificacion": {
+    "baseline": {
+      "accuracy": 0.7,
+      "precision": 0.6363636363636364,
+      "recall": 1.0,
+      "f1": 0.7777777777777778,
+      "confusion_matrix": [
+        [
+          7,
+          12
+        ],
+        [
+          0,
+          21
+        ]
+      ]
+    },
+    "optimizado": {
+      "accuracy": 0.825,
+      "precision": 0.7692307692307693,
+      "recall": 0.9523809523809523,
+      "f1": 0.851063829787234,
+      "confusion_matrix": [
+        [
+          13,
+          6
+        ],
+        [
+          1,
+          20
+        ]
+      ]
+    },
+    "mejores_hiperparametros": {
+      "max_depth": null,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "min_samples_split": 4,
+      "n_estimators": 100
+    },
+    "importancias": {
+      "Parcial": 0.25523254791645655,
+      "Promedio": 0.21824570380788208,
+      "Horas_Estudio": 0.1458978658381115,
+      "Accesos_Moodle": 0.12837278195282428,
+      "Asistencia": 0.11993650295920283,
+      "Tareas_Entregadas": 0.08185415100689847,
+      "Participacion_Clase": 0.05046044651862424
+    }
+  },
+  "regresion": {
+    "baseline": {
+      "mae": 7.236245210727967,
+      "mse": 85.4280291211713,
+      "rmse": 9.242728445711867,
+      "r2": 0.2979235618839119
+    },
+    "optimizado": {
+      "mae": 4.757045413539262,
+      "mse": 34.497214526661345,
+      "rmse": 5.87343294221202,
+      "r2": 0.7164902228348061
+    },
+    "mejores_hiperparametros": {
+      "max_depth": 8,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "min_samples_split": 4,
+      "n_estimators": 100
+    },
+    "importancias": {
+      "Parcial": 0.21960251967079117,
+      "Horas_Estudio": 0.19457068336648323,
+      "Promedio": 0.193611313223176,
+      "Accesos_Moodle": 0.1384347131608309,
+      "Tareas_Entregadas": 0.09070665253121371,
+      "Participacion_Clase": 0.08729664266576159,
+      "Asistencia": 0.07577747538174341
+    }
+  }
+}
